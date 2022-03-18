@@ -1,0 +1,773 @@
+/* this heading desighn */
+/* here im use many times body ok .. I faced so may issue for centralize this so i can use  */
+
+/* here length of page is define */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
+/* container of class which is contain our world class */
+.container{
+  width: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 110px;
+}
+
+
+/* here is setting of head of alram quotes  */
+.container h1:nth-child(1) {
+  color: #000000;
+  /* background: linear-gradient(to right, #0a0a0a70, #d400003b, #f8004662); */
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 51px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  animation: type 5s steps(40,end) forwards;
+  margin-top: -9%;
+  margin: -10%;
+  margin-top: -23%;
+  margin-left: 20%; 
+  margin: -18% -14% 0% 12%;
+  /* background-image: linear-gradient(-45deg, #e33b3b 0%, #ff357f 25%, #9844b7 50%, #576fe6 100%); */
+  /* animation: background-shift 20s ease infinite; */
+  border-color: #0E141B;
+  border: 2px;
+  opacity: 0.8px;
+  padding: 13%;
+  
+}
+
+/* setting quotes animation  */
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, rgb(0, 0, 0), #000000b9, #fda92a);
+  font-weight: 800;
+  font-size: 20px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+
+/* this all are animation setting of backgroung */
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+/* here all this is define by name this clock section 
+   clock rotation , pic , needle , current times of 
+   world class is all declare here by name 
+*/
+
+
+h4{
+  color: rgb(14, 8, 8);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clocks {
+  display: flex;
+  position: relative;
+}
+.clock {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.clock__container {
+  position: relative;
+  border: solid 2px grey;
+  width: 205px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("clock2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.clock__longHand {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  border-left: solid 1px black;
+  height: 95px;
+  width: 0px;
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  z-index: 200;
+}
+.clock__minuteHand {
+  position: absolute;
+  top: 10px;
+  left: 99px;
+  border-left: solid 5px black;
+  height: 90px;
+  width: 0px;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+  z-index: 200;
+  border-radius: 50%;
+}
+.clock__hourHand {
+  position: absolute;
+  top: 50px;
+  left: 98px;
+  border-left: solid 6px black;
+  height: 50px;
+  width: 0px;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+  z-index: 200;
+  border-radius: 50%;
+}
+
+.clock__centerPoint {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+}
+.DateTime__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* here agian body is use for aline h1 heading in next down pic where alaram and calender is declare  */
+body {
+ 
+  align-items: center;
+  justify-content: center;
+  background-size: 200% 200%;
+  background-image: linear-gradient(-45deg, #e33b3b 0%, #ff357f 25%, #9844b7 50%, #576fe6 100%);
+  animation: background-shift 20s ease infinite;
+  /* background-image: url("https://images.clearliving.com/wp-content/uploads/2017/07/29122125/alarm-clock-for-people-with-hearing-loss.jpeg"); */
+  
+}
+
+
+/* animation setting  */
+
+@keyframes background-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Step two 2 */
+
+
+/* GLobal Styles  for fix page size*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* here all set up  of alaram configuration 
+   define only for alaram this is also 
+   define by their name 
+*/
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: rgba(44, 39, 29, 0.562);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+select {
+  appearance: none;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.575);
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #ffffff;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #0E141B; */
+  
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://daywallpaper.files.wordpress.com/2013/08/green-nature-landscape.jpg");
+  background-repeat: no-repeat; 
+   /* background-image: linear-gradient(-45deg, #e33b3b 0%, #ff357f 25%, #9844b7 50%, #576fe6 100%);
+  animation: background-shift 20s ease infinite; */
+  /* background-color: #1890FF; */
+}
+
+.current-time {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(75, 119, 112, 0.555);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size:xx-medium;
+}
+
+.time {
+  color: #0E141B;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn:focus,
+.btn:hover {
+  box-shadow: rgb(250, 248, 248) 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
+}
+
+.page-title{
+  background-color: #0E141B;
+  align-items: center;
+  text-align: center;
+  color: wheat;
+  
+}
+
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+
+  /* adding padding to container */
+  .main-container {
+    padding-block: 2rem;
+  }
+  .clock-container{
+      justify-content: center;
+      border-radius: 50px;
+      width: 450px;
+      min-height: auto;
+      margin-left: 31%;
+      margin-bottom: -22%;
+      margin-top: 22%;
+  }
+}
+
+
+/* this is main backgound is declare  */
+body {
+  background: #ccc;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  background-image: url("https://daywallpaper.files.wordpress.com/2013/08/green-nature-landscape.jpg");
+  justify-content: center;
+ }
+
+/* CAlender Code  */
+
+
+body{
+  margin:0;
+  color:#444;
+  background-color:#98c2c2;
+  font:290 30px/26px Roboto, sans-serif;
+  transition:background .4s ease-in-out 0s;
+}
+*,:after,:before{
+  box-sizing:border-box
+}
+
+.pull-left{
+  float:left
+}
+
+.pull-right{
+  float:right
+}
+
+.clearfix:after,.clearfix:before{
+  content:'';display:table
+}
+
+.clearfix:after{
+  clear:both;
+  display:block
+}
+
+/* here calendar items are  centralize stting is declare*/
+.calendar{
+  width:300px;
+  font-size:100%;
+  margin:50px auto 0;
+  perspective:1000px;
+  cursor:default;
+  position:relative
+}
+
+/* calendar heading declare */
+.calendar .header{height:100px;
+  position:relative;
+  color:#fff
+}
+
+/* asigning all text in manage form  */
+.calendar .header .text{
+  position:absolute;
+  top:0;left:0;
+  right:0;
+  bottom:0;
+  background-color:#308ff0;
+  padding:15px;
+  transform:rotateX(90deg);
+  transform-origin:bottom;
+  backface-visibility:hidden;
+  transition:.4s ease-in-out 0s;
+  box-shadow:0 6px 20px 0 rgba(0,0,0,.19), 0 8px 17px 0 rgba(0,0,0,.2);
+  opacity:0
+}
+
+/* here calendar heading and head of calendar is declare  */
+.calendar .header .text>span{
+  text-align:center;
+  padding:26px;
+  display:block
+}
+.calendar .header.active .text{
+  transform:rotateX(0deg);
+  opacity:1
+}
+
+/* month format is declare 
+here is declare all about months
+*/
+.months{
+  width:100%;
+  height:280px;
+  position:relative
+}
+
+.months .hr{
+  height:1px;
+  margin:15px 0;
+  background:#ccc
+}
+
+.month{
+  padding:15px;
+  width:inherit;
+  height:inherit;
+  background:#fff;
+  position:absolute;
+  backface-visibility:hidden;
+  transition:all .4s ease-in-out 0s;box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2)
+}
+
+.months[data-flow="left"] .month{
+  transform:rotateY(-180deg)
+}
+
+.months[data-flow="right"] .month{
+  transform:rotateY(180deg)
+}
+
+
+/* this is about table wher day are allocate  */
+
+.table{
+  width:100%;
+  font-size:10px;
+  font-weight:400;
+  display:table
+}
+
+.table .row{
+  display:table-row
+}
+
+.table .row.head{
+  color:#308ff0;
+  text-transform:uppercase
+}
+
+.table .row .cell{
+  width:14.28%;
+  padding:5px;
+  text-align:center;
+  display:table-cell
+}
+.table .row .cell.disable{color:#ccc}
+.table .row .cell span{display:block;width:28px;height:28px;line-height:28px;transition:color,background .4s ease-in-out 0s}
+.table .row .cell.active span{color:#fff;background-color:#308ff0}
+
+
+/* asighn center */
+.months .month[data-active="true"]{
+  transform:rotateY(0);   
+ transform: rotateY(0);
+  margin-top: -15%;
+  margin-left: -98%;
+}
+
+.header [data-action]{color:inherit;position:absolute;top:50%;margin-top:-20px;width:40px;height:40px;z-index:1;opacity:0;transition:all .4s ease-in-out 0s}
+
+/* centering a left right arrow 1 */
+.header [data-action]>i{
+  width:20px;
+  height:20px;
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 636%;
+  margin-top: -281px;
+  margin-left: -301px;
+}
+
+/* centering a left right arrow 2 */
+.header [data-action]>i:before,.header [data-action]>i:after{
+  top:50%;
+  margin-top:-1px;
+  content:'';
+  position:absolute;
+  height:2px;
+  width:20px;
+  border-top:2px solid;
+  border-radius:2px
+}
+
+/* here next previous section declare includinh header also */
+.header [data-action*="prev"]{
+  left:15px
+}
+
+.header [data-action*="next"]{
+  right:15px
+}
+
+.header [data-action*="prev"]>i:before,.header [data-action*="prev"]>i:after{
+  left:0
+}
+
+
+.header [data-action*="prev"]>i:before{
+  top:3px;
+  transform:rotate(-45deg)
+}
+
+.header [data-action*="prev"]>i:after{
+  top:auto;
+  bottom:3px;
+  transform:rotate(45deg)
+}
+
+.header [data-action*="next"]>i:before,.header [data-action*="next"]>i:after{
+  right:0
+}
+
+.header [data-action*="next"]>i:before{
+  top:auto;
+  bottom:3px;
+  transform:rotate(-45deg)
+}
+
+.header [data-action*="next"]>i:after{
+  top:3px;
+  transform:rotate(45deg)
+}
+
+.header.active [data-action]{
+  opacity:1
+}
+
+
+/* here all months and months head color is declare with color also  */
+[data-theme="jan"]{background-color:#90CAF9}
+[data-theme="jan"] .row.head{color:#1E88E5}
+[data-theme="jan"] .header .text,
+[data-theme="jan"] .table .row .cell.active span{
+  background-color:#1E88E5;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="feb"]{background-color:#81D4FA}
+[data-theme="feb"] .row.head{color:#039BE5}
+[data-theme="feb"] .header .text,
+[data-theme="feb"] .table .row .cell.active span{
+  background-color:#039BE5;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+ }
+
+[data-theme="mar"]{background-color:#80CBC4}
+[data-theme="mar"] .row.head{color:#00897B}
+[data-theme="mar"] .header .text,
+[data-theme="mar"] .table .row .cell.active span{
+  background-color:#00897B;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="apr"]{background-color:#C5E1A5}
+[data-theme="apr"] .row.head{color:#7CB342}
+[data-theme="apr"] .header .text,
+[data-theme="apr"] .table .row .cell.active span{
+  background-color:#7CB342;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+
+}
+
+[data-theme="may"]{background-color:#FFE082}
+[data-theme="may"] .row.head{color:#FFB300}
+[data-theme="may"] .header .text,
+[data-theme="may"] .table .row .cell.active span{
+  background-color:#FFB300;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="jun"]{background-color:#FFAB91}
+[data-theme="jun"] .row.head{color:#F4511E}
+[data-theme="jun"] .header .text,
+[data-theme="jun"] .table .row .cell.active span{
+background-color:#F4511E;
+margin-top: -15%;
+margin-bottom: 88%;
+margin-left: -98%;
+margin-right: 98%;
+}
+
+[data-theme="jul"]{background-color:#CE93D8}
+[data-theme="jul"] .row.head{color:#8E24AA}
+[data-theme="jul"] .header .text,
+[data-theme="jul"] .table .row .cell.active span{
+  background-color:#8E24AA;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="aug"]{background-color:#B39DDB}
+[data-theme="aug"] .row.head{color:#5E35B1}
+[data-theme="aug"] .header .text,
+[data-theme="aug"] .table .row .cell.active span{
+  background-color:#5E35B1;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="sep"]{background-color:#EF9A9A}
+[data-theme="sep"] .row.head{color:#E53935}
+[data-theme="sep"] .header .text,
+[data-theme="sep"] .table .row .cell.active span{
+  background-color:#E53935;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+ }
+
+[data-theme="oct"]{background-color:#CE93D8}
+[data-theme="oct"] .row.head{color:#8E24AA}
+[data-theme="oct"] .header .text,
+[data-theme="oct"] .table .row .cell.active span{
+  background-color:#8E24AA;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="nov"]{background-color:#BCAAA4}
+[data-theme="nov"] .row.head{color:#161311}
+[data-theme="nov"] .header .text,
+[data-theme="nov"] .table .row .cell.active span{
+  background-color:#6D4C41;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+[data-theme="dec"]{background-color:#B0BEC5}
+[data-theme="dec"] .row.head{color:#546E7A}
+[data-theme="dec"] .header .text,
+[data-theme="dec"] .table .row .cell.active span{
+  background-color:#546E7A;
+  margin-top: -15%;
+  margin-bottom: 88%;
+  margin-left: -98%;
+  margin-right: 98%;
+}
+
+
+
+
+/* this is only for set color of clock head where country name is written 
+ */
+ 
+style attribute {
+  color: #000000;
+}
+
+
+element.style {
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+style attribute {
+    color: black;
+}

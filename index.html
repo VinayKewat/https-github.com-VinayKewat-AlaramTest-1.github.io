@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+     <!-- Adding Title -->
+     <title>Alaram - Clock For Skill Test </title>
+
+     <!-- Add Fevicon -->
+     <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7z0qwHesLsMAcKYM90tqGlxfkn02ZjX11w&usqp=CAU">
+ 
+     <!-- link css -->
+     <link rel="stylesheet" href="style.css">
+ 
+  </head>
+  <body>
+
+    <!--  Heading  Part  here i use coding ninja wiritng animatiion -->
+    <div class = "container" style="color: aliceblue;">
+    <h1>Alaram Clock🕖(●'◡'●)   </h1>
+    <h1> Alaram Clock🕖  &nbsp; “Disasters work like alarm clocks to the world, hence God allows them. They are shouting, 'Wake up! Love! Pray!” 
+    </h1> 
+    <br><br><br><br><br><br>
+
+
+<!-- <h1>This Alaram clock is also use for work from home internationaly</h1> -->
+<!-- im build this project also for a who work from home internationaly -->
+<!-- this project in my skill test but im also want to inhance this more  -->
+
+
+    <!-- Here i declare World Clock -->
+    <!-- im only define three country name as example -->
+    <div class="ck">
+    <main class="clocks">
+     
+       <!-- here  Paris Clock define  -->
+      <section class="clock">
+        <div>
+          <h4>Paris</h4>
+        </div>
+        <!-- here is declare min hour sec minutes -->
+        <div class="clock__container">
+          <div class="clock__centerPoint"></div>
+          <div id="hourHand__paris" class="clock__hourHand"></div>
+          <div id="minuteHand__paris" class="clock__minuteHand"></div>
+          <div id="longhand__paris" class="clock__longHand"></div>
+        </div>
+        <!-- this div is declare for  clock needle rotation and for showing current  -->
+        <div class="DateTime__container">
+          <p class="dateTimeText__paris"></p>
+        </div>
+      </section>
+
+
+
+      <!-- Here Los Angeles Clock is Define  -->
+      <section class="clock">
+        <div>
+          <h4>Los Angeles</h4>
+        </div>
+        <!-- here is declare min hour sec  -->
+        <div class="clock__container">
+          <div class="clock__centerPoint"></div>
+          <div id="hourHand__manila" class="clock__hourHand"></div>
+          <div id="minuteHand__manila" class="clock__minuteHand"></div>
+          <div id="longhand__manila" class="clock__longHand"></div>
+        </div>     
+        <!-- this div is declare for  clock needle rotation and for showing current  -->
+        <div class="DateTime__container">
+          <p class="dateTimeText__manila"></p>
+        </div>
+      </section>
+      
+
+
+      <!-- This is new for New York  -->
+      <section id="clock_new-york" class="clock">
+        <div>
+          <h4>New York</h4>
+        </div>
+         <!-- here is declare min hour sec minutes -->
+        <div class="clock__container">
+          <div class="clock__centerPoint"></div>
+          <div id="hourHand__new-york" class="clock__hourHand"></div>
+          <div id="minuteHand__new-york" class="clock__minuteHand"></div>
+          <div id="longhand__new-york" class="clock__longHand"></div>
+        </div>
+        <!-- this div is declare for  clock needle rotation and for showing current  -->
+        <div class="DateTime__container">
+          <p class="dateTimeText__new-york"></p>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!-- this is heding for sheduling international time  who work in international level -->
+                             <br><br><br><br><br><br>
+    <h1>This Is World Clock For Work <br><br> From International Level...</h1>
+  </div>
+
+
+
+    <!-- Current time -->
+
+      <!-- here the div is use for set alarm time  -->
+      <div class="main-container d-flex">
+      <div class="clock-container d-flex">
+
+        <!-- this div is use for showing u currrent time by seprating colon -->
+        <div class="current-time mb" id= "current-time"> _ : _ : _ </div>
+
+        <!-- here hour min sec hour is declare for alram  -->
+        <form class="alarm-form d-flex mb">
+          <div>
+          <select name="hours" id="hours" required></select>
+          <select required name="minutes" id="minutes"></select>
+          <select required name="seconds" id="seconds"></select>
+          <select required name="am-pm" id="am-pm">
+
+            <!-- here is use option for click on am pm it gives u option for select am pm -->
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+
+          <!-- here is submit button is declare the button name is set alarm if u click thet it set alarm -->
+          <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+        </form>
+        
+        <!-- this alarm container is declare if cliclk set alarm it set and increase own size self -->
+        <div class="set-alarm-container">
+          <div class="set-alarm-container-title mb" style="color: aliceblue;"> SET-ALARM <br> INDIAN CLOCK</div>
+          <div class="alarms-container" id= "alarms-container"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Calender Code  -->
+  <div class="calender">
+  <div class="calendar">
+    <div class="header">
+
+      <!-- define anchor for if u click < previous button then it reach u previous section -->
+      <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+
+      <!-- here calender month is declare  -->
+      <div class="text" data-render="month-year"></div>
+
+      <!-- define anchor for if u click > next butten it reach u next month -->
+      <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+    </div>
+
+    <!-- here moth day is declare and flow day is right to left like :- 1233456 this way -->
+    <div class="months" data-flow="left">
+      <div class="month month-a">
+        <div class="render render-a"></div>
+      </div>
+      <div class="month month-b">
+        <div class="render render-b"></div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+
+  </body>
+  <!-- link js with html -->
+  <script src="index.js"></script>
+</html>
